@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { background: #0a0f1e; color: #e2e8f0; font-family: 'IBM Plex Sans', sans-serif; margin: 0; }
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #0d9488; border-radius: 3px; }
+.glass { background: rgba(15,23,42,0.7); backdrop-filter: blur(12px); border: 1px solid rgba(45,212,191,0.12); }
+.pulse-dot { animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+.slide-in { animation: slideIn 0.3s ease-out; }
+@keyframes slideIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+.confidence-bar { transition: width 0.8s cubic-bezier(0.4,0,0.2,1); }
