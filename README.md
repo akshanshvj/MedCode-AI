@@ -12,15 +12,15 @@ MedCode AI is an advanced AI-powered tool designed to automate and enhance medic
 ## Interface & Workflows
 
 ### 1. Document Upload & Code Lookup
-![Document Upload](./assets/upload.png)
+![Document Upload](./assets/upload.jpeg)
 The platform offers a seamless interface for uploading various medical documents, including PDFs, images (JPG/PNG), DOCX, and plain text. Users can quickly submit prescriptions, discharge summaries, or clinical notes for instant processing. Additionally, a built-in search tool allows quick manual lookup of specific ICD-10 codes.
 
 ### 2. Live Dashboard Analytics
-![Dashboard Overview](./assets/dashboard.png)
+![Dashboard Overview](./assets/dashboard.jpeg)
 A comprehensive dashboard provides real-time insights into system usage and performance. Track total document scans, AI confidence scores, and critical alerts that require immediate attention. The dashboard also monitors the live status of underlying microservices like the NLP Engine, OCR Service, and the LLM infrastructure.
 
 ### 3. Deep AI Medical Analysis & Coding (Core Engine)
-![Analysis Results](./assets/analysis.png)
+![Analysis Results](./assets/analysis.jpeg)
 This is the heart of MedCode AI. Once a document is processed, the system doesn't just provide a list of codes—it generates a deeply verified, comprehensive breakdown:
 - **Principal & Secondary Diagnoses**: Accurately maps clinical text (e.g., "acute onset of severe right lower quadrant abdominal pain") to precise ICD-10-CM codes (e.g., *R10.9 Unspecified abdominal pain*).
 - **Clinical Justification**: Extracts and highlights the exact sentence from the source text that justifies the code, preventing AI hallucination.
