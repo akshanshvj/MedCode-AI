@@ -9,6 +9,24 @@ MedCode AI is an advanced AI-powered tool designed to automate and enhance medic
 - **Allergy Risk Assessment**: Identifies patient allergies and cross-references them against current medications.
 - **TSV Export**: Easily export extracted structured data for integration with EHR/EMR systems.
 
+## Interface & Workflows
+
+### 1. Document Upload & Code Lookup
+![Document Upload](./assets/upload.png)
+The platform offers a seamless interface for uploading various medical documents, including PDFs, images (JPG/PNG), DOCX, and plain text. Users can quickly submit prescriptions, discharge summaries, or clinical notes for instant processing. Additionally, a built-in search tool allows quick manual lookup of specific ICD-10 codes.
+
+### 2. Live Dashboard Analytics
+![Dashboard Overview](./assets/dashboard.png)
+A comprehensive dashboard provides real-time insights into system usage and performance. Track total document scans, AI confidence scores, and critical alerts that require immediate attention. The dashboard also monitors the live status of underlying microservices like the NLP Engine, OCR Service, and the LLM infrastructure.
+
+### 3. Deep AI Medical Analysis & Coding (Core Engine)
+![Analysis Results](./assets/analysis.png)
+This is the heart of MedCode AI. Once a document is processed, the system doesn't just provide a list of codes—it generates a deeply verified, comprehensive breakdown:
+- **Principal & Secondary Diagnoses**: Accurately maps clinical text (e.g., "acute onset of severe right lower quadrant abdominal pain") to precise ICD-10-CM codes (e.g., *R10.9 Unspecified abdominal pain*).
+- **Clinical Justification**: Extracts and highlights the exact sentence from the source text that justifies the code, preventing AI hallucination.
+- **Official Coding Notes**: Cross-references against official ICD-10-CM guidelines (e.g., reminding the coder to code to the highest specificity if more info is provided) to ensure compliance and accuracy.
+- **Confidence Verification**: Each code is verified by the RAG + LLM anti-hallucination engine, allowing medical coders to trust the results and save hours of manual lookup.
+
 ## Prerequisites
 - Python 3.9+ (recommended), Node.js 18+
 - Tesseract OCR installed
